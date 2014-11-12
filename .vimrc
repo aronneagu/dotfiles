@@ -1,4 +1,10 @@
 let vundleInstalled=0
+let borland_vim=expand('~/.vim/colors/borland.vim')
+if !filereadable(borland_vim)
+    silent !mkdir ~/.vim/colors
+    silent !wget http://www.vim.org/scripts/download_script.php?src_id=188 -O ~/.vim/colors/borland.vim
+    silent !dos2unix ~/.vim/colors/borland.vim
+endif
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
     silent !mkdir -p ~/.vim/bundle/
