@@ -1,0 +1,26 @@
+[global_config]
+  window_state = fullscreen
+  borderless = True
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Inconsolata Medium 14
+    background_darkness = 0.3
+    background_type = transparent
+    scrollbar_position = hidden
+    cursor_color = "#00ff03"
+    icon_bell = False
+    show_titlebar = False
+    copy_on_selection = True
+    cursor_blink = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
