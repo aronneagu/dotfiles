@@ -88,7 +88,6 @@ inoremap jj <ESC>
 nmap <silent> // :nohlsearch<CR>
 map <F2> :<up><CR>
 map <C-v> :shell<CR>
-map <F4> :x<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " Tagbar plugin options
@@ -110,8 +109,11 @@ let g:ack_default_options=" --sort-files -H --nocolor --nogroup --column "
 let g:ackpreview=1
 let g:ack_autoclose=1
 
+set makeprg=gcc\ -o\ %<\ %
 nnoremap <F7> :CtrlPTag<CR>
-nmap <F9> :SCCompile<cr>
+nmap <F7> :cprev<CR>
+nmap <F8> :cnext<CR>
+nmap <F9> :w <bar> silent make<CR><C-l> <bar> :! clear && ./%:r<CR>
 nmap <F10> :SCCompileRun<cr>
 inoremap <c-]> <c-x><c-]>
 
@@ -119,3 +121,7 @@ set statusline=Line:\ %l/%L\ %3p%%%=%F
 set laststatus=2
 
 autocmd BufEnter *.c colorscheme borland
+autocmd BufWinLeave *.c colorscheme default
+" show the quickfix window if compilation failed
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
