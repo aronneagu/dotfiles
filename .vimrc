@@ -17,7 +17,6 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/vim-auto-save'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
@@ -27,7 +26,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'xuhdev/SingleCompile'
 if vundleInstalled == 1
     :PluginInstall
 endif
