@@ -96,6 +96,9 @@ let g:tagbar_autofocus=1
 let g:tagbar_compact=1
 " autocmd FileType * nested :call tagbar#autoopen(0)
 
+" vim-auto-save plugion options
+let g:auto_save=1
+
 
 " CtrlP plugin options
 let g:ctrlp_use_caching=1
@@ -114,7 +117,6 @@ nnoremap <F7> :CtrlPTag<CR>
 nmap <F7> :cprev<CR>
 nmap <F8> :cnext<CR>
 nmap <F9> :w <bar> silent make<CR><C-l> <bar> :! clear && ./%:r<CR>
-nmap <F10> :SCCompileRun<cr>
 inoremap <c-]> <c-x><c-]>
 
 set statusline=Line:\ %l/%L\ %3p%%%=%F
