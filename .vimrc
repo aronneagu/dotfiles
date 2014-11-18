@@ -1,7 +1,7 @@
 let vundleInstalled=0
 let borland_vim=expand('~/.vim/colors/borland.vim')
 if !filereadable(borland_vim)
-    silent !mkdir ~/.vim/colors
+    silent !mkdir -p ~/.vim/colors
     silent !wget http://www.vim.org/scripts/download_script.php?src_id=188 -O ~/.vim/colors/borland.vim
     silent !dos2unix ~/.vim/colors/borland.vim
 endif
