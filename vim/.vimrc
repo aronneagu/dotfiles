@@ -1,10 +1,4 @@
 let vundleInstalled=0
-let borland_vim=expand('~/.vim/colors/borland.vim')
-if !filereadable(borland_vim)
-    silent !mkdir -p ~/.vim/colors
-    silent !wget http://www.vim.org/scripts/download_script.php?src_id=188 -O ~/.vim/colors/borland.vim
-    silent !dos2unix ~/.vim/colors/borland.vim
-endif
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
     silent !mkdir -p ~/.vim/bundle/
@@ -35,7 +29,7 @@ nmap <silent> <F3> :NERDTreeToggle  <CR>
 let g:ctrlp_show_hidden=1
 let NERDTreeShowHidden=1
 syntax enable
-colorscheme default
+colorscheme elflord
 
 set cindent
 set hidden          " keeps current buffers hidden and doesnt close them
@@ -56,22 +50,7 @@ set smartcase       " ignore case if search partern is lower case
                     " otherwise its case sensitive
 set hlsearch        " highlight search terms
 set incsearch       " show search matches as you type
-set relativenumber  " show line number relative to line containing the cursor
-
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-nmap J 5j
-nmap K 5k
-xmap J 5j
-xmap K 5k
+set number          " show line number 
 
 let mapleader = " "
 nmap <silent> <leader>ev :e $MYVIMRC<CR>                      " edit vimrc
