@@ -5,7 +5,7 @@ alias t="task"
 alias in="task add +in"
 alias g="ssh wowcher"
 #requires httpie
-https='http --default-scheme=https'
+alias https='http --default-scheme=https'
 #alias g='ttyrec -e "ssh wowcher" ttyrecord-$(date +%Y%m%dT%H%MZ)'
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
