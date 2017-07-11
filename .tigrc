@@ -1,0 +1,2 @@
+set editor-line-number = no
+bind refs n !@git branch "%(prompt Enter branch name: )"
