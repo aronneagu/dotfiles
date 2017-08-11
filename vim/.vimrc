@@ -105,3 +105,6 @@ autocmd BufWinLeave *.c colorscheme default
 " show the quickfix window if compilation failed
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
+" https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
+set clipboard=unnamed 
