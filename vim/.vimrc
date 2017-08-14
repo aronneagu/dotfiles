@@ -21,6 +21,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'voxpupuli/vim-puppet'
+Plugin 'dhruvasagar/vim-table-mode'
 if vundleInstalled == 1
     :PluginInstall
 endif
